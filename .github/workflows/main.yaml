@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: trstringer/manual-approval@v1
         with:
-          secret: ${{ github.TOKEN }}
+          secret: ${{ secrets.GITHUB_TOKEN }}
           approvers: [laysauchoa]
       - name: Deploy to production
         run: echo deploying
